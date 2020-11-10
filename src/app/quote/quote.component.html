@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-md-6">
+        <h2>S-Quotes</h2>
+        <p><span class="span">Welcome to Mental Health Awareness Quotes!</span></p>
+        <div *ngFor="let quote of quotes; let i = index">
+            <h6> Posted by: {{quote.name}}</h6>
+            <p>Posted: {{quote.date| dateCount}} days ago</p>
+            <app-quote-details [quote]="quote"></app-quote-details>
+            <button class="btn btn-success"(click)="upVote(i)">like {{quote.upVote}}</button>
+            <button class="btn btn-danger"(click)="downVote(i)">Dislike {{quote.downVote}}</button>
+            <button class="btn btn-danger"(click) = "deleteQuote($event,i)">Delete</button>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+    <div>
+        <h6>{{author}}</h6>
+        <p>{{quote}}</p>
+        <div class="bestquote">
+            <button class="btn btn-success"(click) = "bestQuote()">Best quote</button>
+            <p>Number of likes : {{bestquote}} <br>Number of Dislikes : {{worstquote}}</p>
+        </div>
+    </div>
+</div>
