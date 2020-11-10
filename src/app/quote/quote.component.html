@@ -7,7 +7,7 @@
             <p>Posted: {{quote.date| dateCount}} days ago</p>
             <app-quote-details [quote]="quote"></app-quote-details>
             <button class="btn btn-success"(click)="upVote(i)">like {{quote.upVote}}</button>
-            <button class="btn btn-danger"(click)="downVote(i)">Dislike {{quote.downVote}}</button>
+            <button class="btn btn-info"(click)="downVote(i)">Dislike {{quote.downVote}}</button>
             <button class="btn btn-danger"(click) = "deleteQuote($event,i)">Delete</button>
         </div>
     </div>

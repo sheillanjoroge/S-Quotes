@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote('Stl King','"Will, therefore, is the unbroken determination to exercise free choice as well as self-restraint, in spite of the unavoidable experience of shame and doubt in infancy."','Erick Erickson', new Date (1920,16,7)),
-    new Quote('Victor Barasa', '"One day, in retrospect, the years of struggle will strike you as the most beautiful."','Sigmund Freud', new Date(1930,11,8)),
-    new Quote('Kibet Steve', '“Most people do not really want freedom, because freedom involves responsibility, and most people are frightened of responsibility.”','BF Skinner', new Date(1920,11,16)),
+    new Quote('Stl King','"Will, therefore, is the unbroken determination to exercise free choice as well as self-restraint, in spite of the unavoidable experience of shame and doubt in infancy."','Erick Erickson', new Date (2020,10,7)),
+    new Quote('Victor Barasa', '"One day, in retrospect, the years of struggle will strike you as the most beautiful."','Sigmund Freud', new Date(2020,11,8)),
+    new Quote('Kibet Steve', '“Most people do not really want freedom, because freedom involves responsibility, and most people are frightened of responsibility.”','BF Skinner', new Date(2020,11,10)),
   ];
 
   addNewQuote(quote){
